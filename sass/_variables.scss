@@ -1,0 +1,16 @@
+$font__main: 'Sorts Mill Goudy', serif;
+$font__heading: 'Montserrat', sans-serif;
+
+$color__blue: #08388c;
+$color__orange: #fb763d;
+$color__grey: #a2abb0;
+$color__white: #ffffff;
+$color__black: #000000;
+$color__darkgrey: #333333;
+$color__mint: #abd5c7;
+
+$color__text: $color__darkgrey;
+$color__background: #fefefe;
+
+$color__link: $color__blue;
+$color__link-hover: lighten($color__blue, 15%);
