@@ -1,0 +1,23 @@
+.button{
+     text-decoration: none;
+     border: 2px solid $color__black;
+     color: $color__mint;
+     display: inline-block;
+     margin: 1em 0;
+     padding: 1em 1.6em;
+     font-size: 0.85rem;
+     border-radius: 5px;
+     background-color: $color__white;
+     text-transform: uppercase;
+     font-family: $font__heading;
+     &:hover{
+          background-color: $color__mint;
+          color: $color__white;
+     }
+}
+
+.button-secondary{
+     @extend .button;
+     background-color: $color__mint;
+     color: $color__white;
+}
