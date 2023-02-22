@@ -1,1 +1,268 @@
-*,::before,::after{box-sizing:border-box}html{line-height:normal}body{margin:0}hr{border-style:solid;border-width:1px 0 0;color:inherit;height:0;overflow:visible}img,svg,video,canvas,audio,iframe,embed,object{display:block;max-width:100%}img,svg,video,canvas{height:auto}audio{width:100%}img{border-style:none}svg{overflow:hidden}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}body{font-family:"Sorts Mill Goudy",serif}h1,h2,h3,h4,h5,h6{font-family:"Montserrat",sans-serif;color:#333}h1,h2,h3{font-weight:100}h4,h5,h6{font-weight:600}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.17rem}h4{font-size:1rem}h5{font-size:.83rem}h6{font-size:.67rem}h1{margin:.67em 0}pre{white-space:pre-wrap}.nav{font-family:"Montserrat",sans-serif}.nav .menu{list-style:none;padding:3em 4em;margin:0;display:flex}.nav .menu .menu-item a{text-decoration:none;color:#000;padding:1em 2em;display:block}.nav .menu .menu-item a:hover{color:#fff}.header{background-color:#abd5c7;color:#a2abb0}.main{padding:5vw}/*# sourceMappingURL=style.css.map */
+/* Global Remedies
+******************/
+/* Use border-box by default, globally */
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/*
+* Consistent line spacing...
+* CSS Inline Layout Module Level 3: https://drafts.csswg.org/css-inline-3/#line-sizing-property
+*/
+html {
+  line-height: normal;
+}
+
+/* Remove the tiny space around the edge of the page */
+body {
+  margin: 0;
+}
+
+/*
+* 1. Solid, thin horizontal rules
+* 2. Remove Firefox `color: gray`
+* 3. Remove default `1px` height, and common `overflow: hidden`
+*/
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+/* Embedded Elements
+********************/
+/*
+* 1. Block display is usually what we want
+* 2. Remove strange space-below when inline
+* 3. Responsive by default
+*/
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+* Maintain intrinsic aspect ratios when `max-width` is applied
+* (iframe, embed, and object have no intrinsic ratio, set height explicitly)
+*/
+img, svg, video, canvas {
+  height: auto;
+}
+
+/*
+* There is no good reason elements default to 300px,
+* and audio files are unlikely to come with a width attribute
+*/
+audio {
+  width: 100%;
+}
+
+/* Old Browsers
+***************/
+/* Remove the border on images inside links in IE 10 and earlier */
+img {
+  border-style: none;
+}
+
+/* Hide the overflow in IE 10 and earlier */
+svg {
+  overflow: hidden;
+}
+
+/* Default block display on HTML5 elements */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/*
+* 1. Add the correct box sizing in IE 10
+* 2. Remove the padding in IE 10
+*/
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "bitter";
+  color: #333333;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+h1 {
+  margin: 0em 0;
+  text-align: center;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.welcome {
+  text-align: center;
+  padding: 0em;
+  font-size: 1.2em;
+}
+
+.decor {
+  text-align: center;
+  padding: 5em 0em 0em 0em;
+}
+
+.button, .button-fourth, .button-third, .button-secondary {
+  text-decoration: none;
+  border: 2px solid #abd5c7;
+  color: #ffffff;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 1em 1.6em;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  background-color: #abd5c7;
+  text-transform: uppercase;
+  font-family: "bitter";
+}
+.button:hover, .button-fourth:hover, .button-third:hover, .button-secondary:hover {
+  border: 2px solid #44786d;
+  background-color: #ffffff;
+  color: #44786d;
+}
+
+.button-secondary {
+  background-color: #abd5c7;
+  color: #ffffff;
+  border: 2px solid #abd5c7;
+}
+.button-secondary:hover {
+  border: 2px solid #44786d;
+  background-color: #ffffff;
+  color: #44786d;
+}
+
+.button-third {
+  background-color: #abd5c7;
+  color: #ffffff;
+  border: 2px solid #abd5c7;
+}
+.button-third:hover {
+  border: 2px solid #44786d;
+  background-color: #ffffff;
+  color: #44786d;
+}
+
+.button-fourth {
+  background-color: #abd5c7;
+  color: #ffffff;
+  border: 2px solid #abd5c7;
+}
+.button-fourth:hover {
+  border: 2px solid #44786d;
+  background-color: #ffffff;
+  color: #44786d;
+}
+
+.buttonRow1, .buttonRow2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.button, .button-secondary, .button-third, .button-fourth {
+  margin: 1em 16em 0em 0em;
+}
+
+.button-secondary, .button-fourth {
+  margin: 1em 0em 0em 16em;
+}
+
+.nav {
+  font-family: "bitter";
+}
+.nav .menu {
+  list-style: none;
+  padding: 3em 4em;
+  margin: 0;
+  display: flex;
+}
+.nav .menu .menu-item a {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: #ffffff;
+  padding: 0em 1.5em;
+  display: block;
+}
+.nav .menu .menu-item a:hover {
+  color: #44786d;
+}
+
+.imgRow1, .imgRow2 {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  justify-content: center;
+}
+
+.icecream, .brownie {
+  padding: 3em 3em 0em 0em;
+}
+
+.donut, .cookie {
+  padding: 3em 0em 0em 3em;
+}
+
+.cafe-symbol {
+  margin: auto;
+  justify-content: center;
+  width: 65px;
+}
+
+.header {
+  background-color: #abd5c7;
+  color: #a2abb0;
+}
+
+.main {
+  padding: 5vw;
+}
+
+/*# sourceMappingURL=style.css.map */

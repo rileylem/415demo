@@ -1,0 +1,18 @@
+.imgRow1, .imgRow2{
+     display: flex;
+     width: 500px;
+     margin: auto;
+     justify-content: center;
+}
+.icecream, .brownie{
+     padding: 3em 3em 0em 0em;
+}
+.donut, .cookie{
+     padding: 3em 0em 0em 3em;
+}
+
+.cafe-symbol{
+     margin: auto;
+     justify-content: center;
+     width: 65px;
+}

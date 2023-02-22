@@ -1,18 +1,19 @@
 .button{
      text-decoration: none;
-     border: 2px solid $color__black;
-     color: $color__mint;
+     border: 2px solid $color__mint;
+     color: $color__white;
      display: inline-block;
      margin: 1em 0;
      padding: 1em 1.6em;
      font-size: 0.85rem;
      border-radius: 5px;
-     background-color: $color__white;
+     background-color: $color__mint;
      text-transform: uppercase;
      font-family: $font__heading;
      &:hover{
-          background-color: $color__mint;
-          color: $color__white;
+          border: 2px solid $color__darkMint;
+          background-color: $color__white;
+          color: $color__darkMint;
      }
 }
 
@@ -20,4 +21,46 @@
      @extend .button;
      background-color: $color__mint;
      color: $color__white;
+     border: 2px solid $color__mint;
+     &:hover{
+          border: 2px solid $color__darkMint;
+          background-color: $color__white;
+          color: $color__darkMint;
+     }
+}
+
+.button-third{
+     @extend .button;
+     background-color: $color__mint;
+     color: $color__white;
+     border: 2px solid $color__mint;
+     &:hover{
+          border: 2px solid $color__darkMint;
+          background-color: $color__white;
+          color: $color__darkMint;
+     }
+}
+
+.button-fourth{
+     @extend .button;
+     background-color: $color__mint;
+     color: $color__white;
+     border: 2px solid $color__mint;
+     &:hover{
+          border: 2px solid $color__darkMint;
+          background-color: $color__white;
+          color: $color__darkMint;
+     }
+}
+
+.buttonRow1, .buttonRow2{
+     display: flex;
+     margin: auto;
+     justify-content: center;
+}
+.button, .button-third{
+     margin: 1em 16em 0em 0em;
+}
+.button-secondary, .button-fourth{
+     margin: 1em 0em 0em 16em;
 }
